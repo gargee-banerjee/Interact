@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.interact.model.Comments" table = "user_comments">
+      
+      <meta attribute = "class-description">
+         This class contains the comments detail. 
+      </meta>
+      
+      <id name = "pkId" type = "int" column = "pkId">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "name" column = "name" type = "string"/>
+      <property name = "comments" column = "comments" type = "string"/>
+      <property name = "date" column = "create_date" type = "date"/>
+      
+   </class>
+</hibernate-mapping>

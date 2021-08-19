@@ -14,6 +14,7 @@ public class TestSevlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		int l = 0;
 		int another = 0;
+		int check = 0;
 		try {
 			l = Integer.parseInt(req.getParameter("num1"));
 			another = Integer.parseInt(req.getParameter("h"));
